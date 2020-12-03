@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/IMAGES/cropped-Favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/utilities.css">
+    <title>Read Our Blog</title>
+</head>
+
+<body>
+    <div id="home">
+        <header class="hero blog">
+            <div id="navbar" class="navbar top">
+                <h1 class="logo">
+                    <span class="text-primary"><i class="fas fa-book-open"></i></span> Website
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="/HTML/index.html">Home</a></li>
+                        <li><a href="/HTML/index.html#about">About</a></li>
+                        <li><a href="/HTML/index.html#cases">Cases</a></li>
+                        <li><a href="/HTML/index.html#Blog">Blog</a></li>
+                        <li><a href="/HTML/index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content">
+                <h1>Blog</h1>
+               
+            </div>
+        </header>
+    </div>
+    <main>
+  
+        <article class="flex-columns">
+            <div class="row">
+                <div class="column">
+                    <div class="column-1">
+                        <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1504&q=80"
+                            alt="">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="column-2 bg-light">
+                        
+                        <h2>Blog Post One</h2>
+                        <p class="meta">
+                            <i class="fas fa-user"></i> Posted By <strong>John Doe</strong> | October 15 2020
+                        </p>
+                        <p>Lorem ipsum dolor sit,
+                            amet consectetur adipisicing elit.
+                            Autem rerum aliquid sit iusto,
+                            itaque atque corporis vitae eligendi
+                            sapiente eaque? Tempora soluta accusamus, id obcaecati
+                            esse mollitia cumque molestiae quisquam.</p>
+                        <a href="/HTML/post.html" class="btn btn-dark">
+                            <i class="fas fa-chevron"></i>
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="flex-columns flex-reverse">
+            <div class="row" style="padding: 5px;">
+                <div class="column">
+                    <div class="column-1">
+                        <img src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+                            alt="">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="column-2 bg-dark">
+                        
+                        <h2>Blog Post Two</h2>
+                        <p class="meta">
+                            <i class="fas fa-user"></i> Posted By <strong>Jane Doe</strong> | October 15 2020
+                        </p>
+                        <p>Lorem ipsum dolor sit,
+                            amet consectetur adipisicing elit.
+                            Autem rerum aliquid sit iusto,
+                            itaque atque corporis vitae eligendi
+                            sapiente eaque? Tempora soluta accusamus, id obcaecati
+                            esse mollitia cumque molestiae quisquam.</p>
+                        <a href="/HTML/post.html" class="btn btn-light">
+                            <i class="fas fa-chevron"></i>
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="flex-columns">
+            <div class="row">
+                <div class="column">
+                    <div class="column-1">
+                        <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=1500&q=80"
+                            alt="">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="column-2 bg-light">
+                        
+                        <h2>Blog Post Three</h2>
+                        <p class="meta">
+                            <i class="fas fa-user"></i> Posted By <strong>John Doe</strong> | October 15 2020
+                        </p>
+                        <p>Lorem ipsum dolor sit,
+                            amet consectetur adipisicing elit.
+                            Autem rerum aliquid sit iusto,
+                            itaque atque corporis vitae eligendi
+                            sapiente eaque? Tempora soluta accusamus, id obcaecati
+                            esse mollitia cumque molestiae quisquam.</p>
+                        <a href="/HTML/post.html" class="btn btn-dark">
+                            <i class="fas fa-chevron"></i>
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </main>
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <p>Copyright &copy; 2020 - Website</p>
+        
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled=false;
+        window.onscroll=function(){
+            if(window.pageYOffset>100){
+                navbar.classList.remove('top');
+                if(!scrolled){
+                    navbar.style.transform='translateY(-70px)';
+                }
+                setTimeout(function()
+                {
+                    navbar.style.transform='translateY(0)';
+                    scrolled=true;
+                },200);
+            }
+            else{
+                navbar.classList.add('top')
+                scrolled=false;
+            }
+        };
+    </script>
+</body>
+
+</html>
